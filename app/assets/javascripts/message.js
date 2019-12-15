@@ -60,7 +60,7 @@ $(function(){
       alert("メッセージ送信に失敗しました");
     })
   })
-  
+
   var reloadMessages = function() {
     if (window.location.href.match(/\/groups\/\d+\/messages/)){
       last_message_id = $('.message:last').data("message-id");
@@ -79,7 +79,7 @@ $(function(){
         $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
       })
       .fail(function() {
-        console.log('error');
+        alert('error');
       });
     }
   };
